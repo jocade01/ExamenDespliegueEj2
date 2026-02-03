@@ -5,6 +5,6 @@ ENV MYSQL_DATABASE=pinacoteca
 ENV MYSQL_USER=davinci
 ENV MYSQL_PASSWORD=davinci1234
 
-COPY init.sql /docker-entrypoint-initdb.d/
+COPY pinacoteca.sql /docker-entrypoint-pinacotecadb.d/
 
 EXPOSE 3306
